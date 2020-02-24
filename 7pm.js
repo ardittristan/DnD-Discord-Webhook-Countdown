@@ -7,7 +7,7 @@ var webHooks = new Webhooks({
     httpSuccessCodes: [204]
 });
 
-//timer
+//*timer
 async function timer() {
     var now = new Date(Date.now());
     var nextThursday = new Date(Date.now());
