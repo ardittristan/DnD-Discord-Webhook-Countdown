@@ -1,0 +1,16 @@
+{
+  "name": "timeuntilthursday7pm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "7pm.js",
+  "scripts": {
+    "test": "node 7pm.js"
+  },
+  "author": "ardittristan",
+  "license": "ISC",
+  "dependencies": {
+    "get-midnight-date": "^1.0.0",
+    "get-next-date": "^1.0.0",
+    "node-webhooks": "^1.4.2"
+  }
+}
