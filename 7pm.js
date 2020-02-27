@@ -14,7 +14,15 @@ async function timer() {
     if (now.getDay() === 4) {
         var today7 = GetMidnighDate(now).getTime() + 72000000;
         if (now.getTime() <= today7) {
-
+            nextThursday = GetMidnighDate(now);
+        } else {
+            var running = true;
+            while (running) {
+                nextThursday = GetNextDate(nextThursday);
+                if (nextThursday.getDay() === 4) {
+                    running = false;
+                }
+            }
         }
     } else {
         var running = true;
